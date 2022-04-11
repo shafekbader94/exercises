@@ -1,0 +1,15 @@
+div {
+  width: 50%;
+}
+
+h1 {
+  font-family: "Helvetica";
+}
+
+ul {
+  color: red;
+}
+
+.nav-bar {
+  position: fixed;
+}

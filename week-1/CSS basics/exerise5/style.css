@@ -1,0 +1,30 @@
+body{
+  background-color: rgb(163, 170, 165);
+}
+
+span{
+  border: 1px solid black;
+  box-shadow: 10px;
+}
+
+#first {
+  height: 50px;
+  width: 50px;
+  background-color: #44ad91;
+  display: inline-block;
+ 
+}
+
+#second {
+  height: 50px;
+  width: 50px;
+  background-color: #e67850;
+  display: inline-block;
+}
+
+
+button{
+  background-color: rgb(51, 186, 51);
+  border:1px solid #209276;
+}
+
