@@ -1,62 +1,73 @@
 #parent {
   width: 300px;
-  height: 300px;
-  background-color: rgb(34, 0, 255);
-  display: inline-block;
+  height: 200px;
+  background-color: rgb(94, 78, 215);
+  position: relative;
 }
 
 #child1 {
-  width: 300px;
-  height: 20px;
-  background-color: rgb(206, 28, 28);
+  width: 20px;
+  height: 50px;
+  background-color: rgb(182, 211, 220);
   position: absolute;
-  top: 50px;
+  bottom:0;
+  left: 1px;
 }
 
 #child2 {
   width: 20px;
-  height: 300px;
-  background-color: rgb(166, 41, 41);
+  height: 110px;
+  background-color: rgb(182, 211, 220);
   position: absolute;
-  left: 50px;
+  bottom:0;
+  left: 40px;
 }
 
-#child2 {
+#child3 {
   width: 20px;
-  height: 300px;
-  background-color: rgb(166, 41, 41);
+  height: 150px;
+  background-color: rgb(182, 211, 220);
   position: absolute;
-  left: 50px;
-}
-
-#child2 {
-  width: 20px;
-  height: 300px;
-  background-color: rgb(166, 41, 41);
-  position: absolute;
-  left: 50px;
+  bottom:0;
+  left: 80px;
 }
 
 #child4 {
   width: 20px;
-  height: 300px;
-  background-color: rgb(166, 41, 41);
+  height: 140px;
+  background-color: rgb(182, 211, 220);
   position: absolute;
-  left: 50px;
+  bottom:0;
+  left: 120px;
 }
+
 
 #child5 {
   width: 20px;
-  height: 300px;
-  background-color: rgb(166, 41, 41);
+  height: 130px;
+  background-color: rgb(182, 211, 220);
   position: absolute;
-  left: 50px;
+  bottom:0;
+  left: 160px;
 }
 
 #child6 {
   width: 20px;
-  height: 300px;
-  background-color: rgb(166, 41, 41);
+  height: 70px;
+  background-color: rgb(182, 211, 220);
   position: absolute;
-  left: 50px;
+  bottom:0;
+  left: 200px;
+}
+
+#money {
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
+
+#time {
+  position: absolute;
+  bottom:10px;
+  right: 20px;
 }
