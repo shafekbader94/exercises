@@ -1,0 +1,21 @@
+#parent{
+
+    background-color: red;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  #child1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(4, 0, 255);
+
+  }
+
+  #child2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(41, 166, 56);
+
+   
+  }

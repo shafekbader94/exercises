@@ -1,0 +1,33 @@
+.heading {
+    font-weight: bold;
+    vertical-align: middle;
+    color: rgb(43, 89, 187);
+  }
+  
+  .tomato {
+    color: tomato;
+  }
+  
+  .gross-color {
+    color: #a3c010;
+  }
+  
+  .nice-color {
+    color: #03bbbb;
+  }
+
+  p:nth-child(2) {
+    background: red;
+  }
+
+      /* All p elements that are direct descendants of a div are given green text */
+    
+      div  p  {
+        color: rgb(140, 19, 144);
+      }
+
+      .hey1 #hey2{
+          background-color: rgb(203, 44, 44);
+      }
+
+ 

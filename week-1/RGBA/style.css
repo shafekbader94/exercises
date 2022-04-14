@@ -1,0 +1,22 @@
+.none{
+  position: absolute;
+  bottom: 0;
+  background: rgb(53, 145, 145);
+  color: #f1f1f1;
+  margin: 26% 2%;
+  width: 200px;
+
+}
+.tiltes{
+  
+  position: absolute;
+  bottom: 0;
+  background: rgba(222, 14, 211, 0.331);
+  color: #f1f1f1;
+  margin: 26% 2%;
+  width: 100px;
+  padding: 4%;
+  top: -5%;
+  
+  
+}

@@ -1,0 +1,39 @@
+
+.right {
+  height: 50px;
+  width: calc(40% / 3);
+  background-color: #dea09a;
+  display: inline-block;
+  margin: 0px;
+  border: 1px solid black;
+  box-shadow: 10px;
+  
+}
+
+.left {
+  height: 50px;
+  width: calc(40% / 3);
+  background-color: #dea09a;
+  display: inline-block;
+  border: 1px solid black;
+  box-shadow: 10px;
+
+
+}
+
+
+.center {
+  height: 50px;
+  width: calc(40% / 3);
+  background-color: #dea09a;
+  display: inline-block;
+  border: 1px solid black;
+  box-shadow: 10px;
+  
+}
+
+.container{
+ 
+  display: flex;
+}
+
