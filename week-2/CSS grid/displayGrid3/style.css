@@ -1,0 +1,36 @@
+
+.head{
+    grid-area: h;
+    background-color: rgb(231, 185, 19);
+}
+
+.side-nav{
+    grid-area: s;
+    background-color: rgb(161, 161, 161);
+}
+
+.main{
+    grid-area: m;
+    background-color: rgb(82, 177, 147);
+}
+
+.foot{
+    grid-area: f;
+    background-color: rgb(226, 43, 43);
+}
+
+#container{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "h h s s f f"
+    "h h s s f f"
+    "h h s s f f"
+    "h h m m f f"
+    "h h m m f f";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  /*  grid-gap: 10px;*/
+   
+
+}

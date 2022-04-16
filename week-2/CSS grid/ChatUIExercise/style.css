@@ -1,0 +1,115 @@
+p{
+    color: black;
+    font-size: 20px;
+}
+
+.side-nav{
+    grid-area: s;
+    background-color: rgb(152, 10, 119);    
+}
+
+.chatWindow{
+    grid-area: m;
+    background-color: rgb(216, 219, 218);
+}
+
+.foot{
+    grid-area: f;
+    background-color: rgb(244, 244, 244);
+}
+
+#container{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "s m"
+    "s f";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 13fr 1fr;
+    grid-gap: 2px;
+   
+
+}
+
+
+.text-container{
+    display: grid;
+    height: 100px;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+
+}
+
+.left{
+    display: grid;
+    background-color: gray;
+    width: 20%;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.right{
+
+    background-color: rgb(52, 223, 118);
+    width: 20%;
+    position: relative;
+    margin-top: 10px;
+     margin-left: 80%;
+}
+
+
+.leftText{
+    display: grid;
+    background-color: gray;
+    justify-content: start;
+    font-size: 150%;
+
+    
+}
+
+.leftTime{
+    display: grid;
+    background-color: gray;
+    justify-content: end;
+}
+
+.textRight{
+    display: grid;
+    justify-content: start;
+font-size: 150%;
+}
+
+.timeRight{
+    display: grid;
+    justify-content: end;
+}
+
+
+.freind{
+    display: grid;
+    grid-gap: 30px;
+    
+}
+
+#styleID{
+    background-color: rgba(240, 248, 255, 0.29);
+}
+
+#text{
+width: 85%;
+height: 40px;
+}
+
+#sentBtn{
+    background-color: blueviolet;
+    color: aliceblue;
+    position: relative;
+    margin-left: 10px;
+    display: inline-block;
+    width: 190px;
+    height: 30px;
+    text-align: center;
+    padding-top: 15px;
+}
