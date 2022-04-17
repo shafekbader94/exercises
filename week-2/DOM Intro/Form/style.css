@@ -1,0 +1,28 @@
+#container{
+    background-color: #1abc9c;
+    position: relative;
+    margin-right:70%;
+    border-width: 50%;
+    padding: 3%;
+  
+  }
+
+#salryDate{
+  display: inline-flex;
+ 
+}
+ 
+#birthdayDiv{
+  position: relative;
+  margin-left: 26px;
+}
+
+#btn{
+  position: relative;
+  margin-left: 70%;
+
+}
+button{
+  background-color: #aab5b3;
+  font-size:120% ;
+}

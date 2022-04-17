@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+<div id="container">
+    <form id="form" >
+        <label for="name" >Name</label><br>
+        <input type="text" id="name" name="name" placeholder="SHUBERT"><br>
+        <br>
+<div id="salryDate">
+        <div>
+        <label for="salary">Desired Salary</label><br>
+        <input type="number" id="salary" name="salary" placeholder="12000"><br>
+    </div>
+    <br>
+    <div id="birthdayDiv">
+        <label for="birthday">Birthday</label><br>
+        <input type="date" id="birthday" name="birthday" value="1991-03-14" ><br>
+    </div>
+</div>
+<div>
+    <br>
+        <label for="phone">Phone</label><br>
+        <input type="number" id="phone" name="phone" placeholder="0123121690"><br>
+    </div>
+        <br>
+    </form>
+    <br>
+    <div id="btn">
+    <button  onclick="validate()">Submit</button><br>
+</div>
+</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
