@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Balthazar" rel="stylesheet">
+
+<body>
+  
+  <script id="menu-template" type="text/x-handlebars-template">
+    <ul>
+      {{#each menu}}
+        <li><a href="{{link}}">{{name}}</a></li>
+      {{/each}}
+    </ul>
+  </script>
+  
+  <div class="menu">
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
