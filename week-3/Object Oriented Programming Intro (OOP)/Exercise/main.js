@@ -37,7 +37,7 @@ class Cleaner {
     this.name = name;
   }
 
-  clean(name) {
+  clean() {
     console.log("Clean");
   }
 }
