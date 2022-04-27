@@ -1,0 +1,59 @@
+
+[
+  {
+    "name":"Cow" ,
+    "weight":{
+      "kg":100 ,
+      "tons": 0.1
+    } ,
+    "live": "israel",
+    "endangered": false,
+    "food":["Grass" , "Grain"],
+    "eatenby":["people" , "lion" , "wolf"],
+    "delicious":5
+
+  },
+
+  {
+    "name":"Elephant" ,
+    "weight":{
+      "kg":1000 ,
+      "tons": 1
+    } ,
+    "live": "israel",
+    "endangered": false,
+    "food":["Grass" , "Grain"],
+    "eatenby":["lion" , "wolf"],
+    "delicious":5
+
+  },
+
+  {
+    "name":"Gray Wolf" ,
+    "weight":{
+      "kg":100 ,
+      "tons": 0.1
+    } ,
+    "live": "israel",
+    "endangered": true,
+    "food":["meat"],
+    "eatenby":["lion"],
+    "delicious":5
+
+  },
+
+  {
+    "name":"Squirrel" ,
+    "weight":{
+      "kg":30 ,
+      "tons": 0.03
+    } ,
+    "live": "israel",
+    "endangered": false,
+    "food":["Grass" , "Grain"],
+    "eatenby":["lion" , "wolf"],
+    "delicious":5
+
+  }
+
+]
