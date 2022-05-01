@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Selouse</title>
+
+
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css" >
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <div id="search">
+    <input type="text" placeholder="Address" id="addr-input">
+    <input type="number" class="min price" placeholder="Min. Price" id="min-p-input">
+    <input type="number" class="max price" placeholder="Max Price" id="max-p-input">
+    <input type="number" class="min room" placeholder="Min. Rooms" id="min-r-input">
+    <input type="number" class="max room" placeholder="Max Rooms" id="max-r-input">
+
+    <div class="check-group">
+      <input class="form-radio" type="checkbox" name="immediate" id="immed-y">
+      <label for="immediate">Immediate</label>
+    </div>
+    <div class="check-group">
+      <input class="form-radio" type="checkbox" name="parking" id="park-y">
+      <label for="parking">Parking</label>
+    </div>
+
+    <button>Find Apartments</button>
+  </div>
+
+  <hr>
+
+  <div id="results"></div>
+  <script id="apartments-template" type="text/x-handlebars-template">
+
+      {{#each apartments}}
+      <div class="result">
+        <img src="{{img}}">
+        {{#if immediate}}
+        <div class="immediate">Contact Deatails:
+          <p class="l-immediate">
+            {{contactDetails.name}}
+          </p>
+            <p class="l-immediate">
+              Email: {{contactDetails.email}}
+            </p>
+          
+      </div>
+      {{/if}}
+        {{#if parking}}
+          <div class="l-park">Parking: </div>
+          <div class="parking">Availabe</div>
+        {{/if}}
+        <div class="l-addr">Address:</div>
+        <div class="address">{{address}}</div>
+        <div class="l-price">Price:</PRe> </div> 
+        <div class="price">{{price}}</div>
+        <div class="l-rooms">Rooms:</div> 
+        <div class="rooms">{{rooms}}</div>
+
+      </div>
+    {{/each}}
+ 
+    </script>
+
+
+
+    <script id="noApartments-template" type="text/x-handlebars-template">
+      <div class="no-match">{{str}}</div>
+      
+    </script>
+
+
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/handlebars/dist/handlebars.js"></script>
+
+  <script src="apt-data.js"></script>
+  <script src="apt-filter.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
