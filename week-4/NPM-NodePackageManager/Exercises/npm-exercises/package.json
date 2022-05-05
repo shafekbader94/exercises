@@ -8,9 +8,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "faker": "^6.6.6",
     "validator": "^13.7.0"
   },
-  "devDependencies": {},
-  "description": ""
+  "description": "",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "Node"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.3.1"
+  }
 }

@@ -1,7 +1,7 @@
 /*******Exercise 1******* */
-var validator = require('validator');
+const validator = require('validator');
 
-var faker = require('faker');
+const {faker} = require('@faker-js/faker');
 
 //Ex. 1
 //Check whether "shoobert@dylan" is a valid email (should be false)
@@ -29,13 +29,16 @@ const makeHuman = function(number ){
 
     for(let i = 0 ; i < number ; i++)
     {
-        //people.push({name: faker.name.findName(), img: faker.image.avatar(), company: faker.company.bs() })
-        console.log(faker.name.findName())
+        people.push({name: faker.name.findName(), img: faker.image.avatar(), company: faker.company.bs() })
+   
     }
-
+    people.forEach(person =>{
+        console.log(`${person.name}, ${person.img}, ${person.company}`)
+    })
 }
 //console.log(people)
 
 makeHuman(2) //prints the following:
 // Viola, https://s3.amazonaws.com/uifaces/faces/twitter/motionthinks/128.jpg, Donnelly - Feil
 // Isaias, https://s3.amazonaws.com/uifaces/faces/twitter/gt/128.jpg, Wilkinson, Hickle and Hoppe
+
