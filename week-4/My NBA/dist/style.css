@@ -1,0 +1,42 @@
+.container {
+  display: inline-block;
+  background-color: #dc8132;
+  box-shadow: 1px 1px 3px black;
+
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+img {
+  margin-bottom: -2px;
+  cursor: pointer;
+}
+img:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.players {
+  box-shadow: black 5px 3px 4px;
+  border-radius: 10px;
+  margin: 30px;
+  background: fixed;
+  width: 440px;
+  height: 320px;
+  display: inline-block;
+  border: 1px solid rgb(34, 25, 25);
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  background-color: aliceblue;
+}
+
+.player-container {
+  font-family: "Raleway", sans-serif;
+  margin: 20px;
+  padding: 20px;
+  margin-top: 50px;
+  align-items: center;
+}
