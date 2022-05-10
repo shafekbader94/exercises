@@ -1,20 +1,18 @@
 .container {
-  display: inline-block;
-  background-color: #dc8132;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  padding: 1vmax;
+  border-radius: 4px;
   box-shadow: 1px 1px 3px black;
+  background-color: #dc8132;
 
-  border: 1px solid black;
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
 }
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #dc8132;
 }
-img {
-  margin-bottom: -2px;
-  cursor: pointer;
-}
+
 img:hover {
   opacity: 0.6;
   transition: 0.3s;
@@ -22,21 +20,31 @@ img:hover {
 .players {
   box-shadow: black 5px 3px 4px;
   border-radius: 10px;
-  margin: 30px;
-  background: fixed;
-  width: 440px;
-  height: 320px;
-  display: inline-block;
+  text-align: center;
   border: 1px solid rgb(34, 25, 25);
-  padding: 1rem 1rem;
-  vertical-align: middle;
   background-color: aliceblue;
 }
 
 .player-container {
-  font-family: "Raleway", sans-serif;
-  margin: 20px;
-  padding: 20px;
-  margin-top: 50px;
-  align-items: center;
+  display: grid;
+  grid-gap: 1vmax;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#input{
+  grid-area: i;
+  padding: 2px;
+  font-size: 1.5vw;
+  display: inline;
+  margin: 6px;
+  width: 80%;
+}
+button{
+  display: inline;
+  grid-area: i;
+  padding: 2px;
+  font-size: 1.5vw;
+  display: inline;
+  margin: 6px;
+ 
 }
