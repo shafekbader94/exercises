@@ -1,0 +1,58 @@
+db.linkedon.find({}); //or whichever operation
+
+/*1
+db.linkedon.count({
+    salary: {
+        $gt: 25000
+    }
+})
+*/
+////////////////////////////////////////
+/*2
+db.linkedon.find(
+  {
+    salary: {
+      $gt: 0,
+    },
+  },
+  {
+    firstName: 1,
+    salary: 1
+  }
+).sort({salary:-1}).limit(3);
+*/
+////////////////////////////////////////
+/*3
+db.linkedon.count({
+  $and:
+   [
+    { "currentCompany.name": "Walmart" },
+   { salary: { $gte: 7000 } }
+   ]
+});
+*/
+////////////////////////////////////////
+
+db.linkedon.find(
+  {
+      $and:[
+          {
+ $or:
+   [
+    { "currentCompany.industry": "Retail" },
+    { "currentCompany.industry": "Sales" }
+   ]
+          },
+  
+   { salary: { $gte: 0 } }
+      ]
+  },
+
+ 
+  {
+    currentCompany:{name:1},
+    firstName: 1,
+    lastName: 1,
+    salary: 1
+  }
+).sort({salary:-1}).limit(1);
