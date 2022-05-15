@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Totally Real Site</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <input type="text" id="input" placeholder="Search for team">
+    <button>Search</button>
+
+    <script id="aboutPlayer-template" type="text/x-handlebars-template">
+        {{#each players}}
+<div class="container">
+        <div class="players"> {{this.firstName}} {{this.lastName}}<br>
+        {{this.jersey}} 
+        <img  src="https://nba-players.herokuapp.com/players/{{this.lastName}}/{{this.firstName}}"><br>
+        {{this.pos}}
+    </div>
+    </div>
+        <br>
+
+         {{/each}}
+
+
+
+     </script>
+
+
+
+     <script id="aboutPlayer-template2" type="text/x-handlebars-template">
+        {{#each players}}
+<div class="container">
+        <div class="players"> {{this.firstName}} {{this.lastName}}<br>
+        {{this.jersey}} 
+        <img  src="https://nba-players.herokuapp.com/players/{{this.lastName}}/{{this.firstName}}"><br>
+        {{this.pos}}
+    </div>
+    </div>
+        <br>
+
+         {{/each}}
+
+
+
+     </script>
+
+
+    <div class="player-container"></div>
+    <br>
+    <h2>The dream team</h2>
+    <br>
+    <div class="player-container2"></div>
+
+
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="render.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
